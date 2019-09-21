@@ -1,8 +1,11 @@
-body{
+/*Extra small devices (portrait phones, less than 544px) */
+
+#body{
     font-family: 'Open Sans', sans-serif;
     padding: 0px;
     margin: 0px;
     background: #ebebeb;
+/*    background: blue;*/
 }
 
 #header{
@@ -11,14 +14,15 @@ body{
     background: url(images/header.png);
 }
 
-#header>a>img{
-    width: 20%
+#header>img{
+    width: 25%;
+    margin: 3%;
 }
 
 #conteiner{
     margin: 1%;
     padding: 5%;
-    width: 88%;
+    width: 98%;
     background: #ffffff;
     background-image: url("images/background_icon.png");
     background-size: 40%;
@@ -42,10 +46,10 @@ body{
     width: 60%;
 }
 #conteiner>#para_2{
-    font-size: 10px;
+    font-size: 12px;
 }
 #conteiner>#para_3{
-    font-size: 10px;
+    font-size: 12px;
 }
 #conteiner>#para_3>span{
     font-weight: bold;
@@ -53,14 +57,17 @@ body{
 #div_2{
     display:flex;
     justify-content:space-between;
+    font-size: 11px;
 }
 #div_2>#web_link{
     display: inline-block;
     vertical-align: top;
 }
+/*
 #div_2>#web_link>p{
     font-size: 10px;
 }
+*/
 #div_2>#web_link>div{
     display: inline-block;
     background: url(images/Rectangle%201.png);
@@ -83,14 +90,17 @@ body{
 
 #div_2>#rating{
     display: inline-block;
-    vertical-align: top;
+    text-align: center;
     
 }
+/*
 #div_2>#rating>p{
     font-size: 10px;
 }
+*/
 #div_2>#rating>div{
     display: inline-block;
+    font-size: 15px;
 }
 
 #div_2>#rating>div>.checked{
@@ -98,35 +108,36 @@ body{
 }
 
 #support{
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
 }
 #support>p{
     font-weight: bold;
     color:#9E9E9E;
 }
-#support>div{
-    display:flex;
-    justify-content:space-between;
-}
+
 #support>div p{
     margin: 0;
 }
-#support>#chat{
-    display: inline-block;
-}
-#support img{
+#support>div img{
     width: 40%;
     display: inline-block;
 }
-#support>#telegram{
+#support>div>#chat{
     display: inline-block;
+    width: 24%;
 }
-#support>#whatsapp{
+#support>div>#telegram{
     display: inline-block;
+    width: 24%;
 }
-#support>#hotline{
+#support>div>#whatsapp{
     display: inline-block;
+    width: 24%;
+}
+#support>div>#hotline{
+    display: inline-block;
+    width: 24%;
 }
 
 
@@ -144,7 +155,8 @@ body{
 #footer1>a>img{
     display: inline-block;
     background: #ffffff;
-    width: 94%;
+    width: 100%;
+    height: auto;
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 3px;
@@ -155,6 +167,8 @@ body{
     margin: 1%;
     padding: 3%;
     background: #ffffff;
+    font-size: 9px;
+    color: #9E9E9E;
 }
 #footer2>#contact{
     width:36%;
@@ -165,8 +179,6 @@ body{
 }
 #footer2>#contact>p{
     font-weight:bold;
-    font-size: 9px;
-    color: #9E9E9E;
     margin: 0;
     padding-bottom:5px;
 }
@@ -185,7 +197,7 @@ body{
 }
 #footer2>#contact>ul>li>span>img{
     margin-right: 3px;
-    height: 6px;
+    height: 7px;
     display: inline-block;
 }
 
@@ -197,17 +209,16 @@ body{
 }
 #footer2>#download_app>p{
     font-weight:bold;
-    font-size: 9px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 10%;
-    color: #9E9E9E;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     padding-bottom: 5px;
 }
 #footer2>#download_app>img{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
     display: inline-block;
 }
 
@@ -223,8 +234,6 @@ body{
     margin-left: 10%;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 9px;
-    color: #9E9E9E;
     padding-bottom: 5px;
 }
 #footer2>#follow_us>ul{
@@ -243,8 +252,73 @@ body{
 }
 #footer2>#follow_us>ul>li>a{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #footer2>#follow_us>ul>li>a>img{
-    width: 94%;
+    max-width: 94%;
+    height: auto;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    #conteiner>#para_1{
+        border-left: 3px solid #0772B2;
+        font-size: 1.5rem;
+        padding-left: 7px;
+    }
+    #conteiner>#para_2{
+        font-size: 16px;
+    }
+    #conteiner>#para_3{
+        font-size: 16px;
+    }
+    #div_2{
+        font-size: 16px;
+    }
+    #div_2>#rating>div{
+      font-size: 20px;
+    }
+    
+    #support{
+        font-size: 16px;
+    }
+    #footer2{
+        font-size: 14px;
+    }
+    #footer2>#contact>ul{
+        font-size: 12px;
+    }
+    #footer2>#contact>ul>li>span>img{
+        height: 11px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    #support>div{
+        display: flex;
+        justify-content: center;
+    }
+    #support>div img{
+        width: 20%;
+        display: inline-block;
+    }
+    #support>div p{
+        width: 75%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: bottom;
+        padding-left:2%;
+    }
+    
+    #footer2{
+        font-size: 16px;
+    }
+    #footer2>#contact>ul{
+        font-size: 14px;
+    }
+    #footer2>#contact>ul>li>span>img{
+        height: 13px;
+    }
+  
 }
