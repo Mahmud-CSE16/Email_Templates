@@ -236,7 +236,7 @@ body{
     padding: 0;
 }
 #footer2>#follow_us>ul>li{
-    width: 22%;
+    width: 21%;
     float: left;
     margin: 0;
     padding: 0;
@@ -246,5 +246,5 @@ body{
     justify-content: center;
 }
 #footer2>#follow_us>ul>li>a>img{
-    max-width: 94%;
+    width: 94%;
 }
