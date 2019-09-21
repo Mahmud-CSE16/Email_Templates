@@ -1,0 +1,250 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: #ebebeb;
+}
+
+#header{
+    width: 100%;
+    text-align: center;
+    background: url(images/header.png);
+}
+
+#header>a>img{
+    width: 20%
+}
+
+#conteiner{
+    margin: 1%;
+    padding: 5%;
+    width: 88%;
+    background: #ffffff;
+    background-image: url("images/background_icon.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#conteiner>#para_1{
+    border-left: 3px solid #0772B2;
+    padding-left: 7px;
+}
+#conteiner>#para_1>span{
+    color: #0772b2;
+    font-weight: bold;
+}
+
+#conteiner>#welcome_img_conteiner{
+    text-align: center;
+}
+#conteiner>#welcome_img_conteiner>#welcom_img{
+    width: 60%;
+}
+#conteiner>#para_2{
+    font-size: 10px;
+}
+#conteiner>#para_3{
+    font-size: 10px;
+}
+#conteiner>#para_3>span{
+    font-weight: bold;
+}
+#div_2{
+    display:flex;
+    justify-content:space-between;
+}
+#div_2>#web_link{
+    display: inline-block;
+    vertical-align: top;
+}
+#div_2>#web_link>p{
+    font-size: 10px;
+}
+#div_2>#web_link>div{
+    display: inline-block;
+    background: url(images/Rectangle%201.png);
+    border-radius: 11px;
+    color: white;
+    padding: 5px 20px;
+}
+#div_2>#web_link>div>img{
+    height: 22px;
+    float: left;
+    display: inline-block;
+}
+#div_2>#web_link>div>p{
+    display: inline-block;
+    margin:0;
+    padding: 5px 0 0 5px;
+    height: 22px;
+    font-size: 10px;
+}
+
+#div_2>#rating{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+#div_2>#rating>p{
+    font-size: 10px;
+}
+#div_2>#rating>div{
+    display: inline-block;
+}
+
+#div_2>#rating>div>.checked{
+    color: orangered;
+}
+
+#support{
+    font-size: 10px;
+    text-align: center;
+}
+#support>p{
+    font-weight: bold;
+    color:#9E9E9E;
+}
+#support>div{
+    display:flex;
+    justify-content:space-between;
+}
+#support>div p{
+    margin: 0;
+}
+#support>#chat{
+    display: inline-block;
+}
+#support img{
+    width: 40%;
+    display: inline-block;
+}
+#support>#telegram{
+    display: inline-block;
+}
+#support>#whatsapp{
+    display: inline-block;
+}
+#support>#hotline{
+    display: inline-block;
+}
+
+
+#footer1{
+    margin: 1%;
+}
+#footer1>a{
+    display: flex;
+    justify-content: center;
+    
+}
+#footer1>a:not(:last-child) {
+  margin-right: 1em;
+}
+#footer1>a>img{
+    display: inline-block;
+    background: #ffffff;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#footer2{
+    margin: 1%;
+    padding: 3%;
+    background: #ffffff;
+}
+#footer2>#contact{
+    width:36%;
+    height: 70px;
+    border-right: 1px solid #9E9E9E;
+    display: inline-block;
+    vertical-align:top;
+}
+#footer2>#contact>p{
+    font-weight:bold;
+    font-size: 9px;
+    color: #9E9E9E;
+    margin: 0;
+    padding-bottom:5px;
+}
+#footer2>#contact>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}
+#footer2>#contact>ul>li{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+#footer2>#contact>ul>li>span{
+    align-items: center;
+}
+#footer2>#contact>ul>li>span>img{
+    margin-right: 3px;
+    height: 6px;
+    display: inline-block;
+}
+
+#footer2>#download_app{
+    width:25%;
+    display: inline-block;
+    height: 70px;
+    vertical-align:top;
+}
+#footer2>#download_app>p{
+    font-weight:bold;
+    font-size: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
+    color: #9E9E9E;
+    width: 80%;
+    padding-bottom: 5px;
+}
+#footer2>#download_app>img{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+#footer2>#follow_us{
+    height: 70px;
+    display: inline-block;
+    width:36%;
+    border-left: 1px solid #9E9E9E;
+    vertical-align:top;
+}
+#footer2>#follow_us>p{
+    font-weight:bold;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 9px;
+    color: #9E9E9E;
+    padding-bottom: 5px;
+}
+#footer2>#follow_us>ul{
+    list-style-type: none;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+#footer2>#follow_us>ul>li{
+    width: 22%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#footer2>#follow_us>ul>li>a{
+    display: flex;
+    justify-content: center;
+}
+#footer2>#follow_us>ul>li>a>img{
+    max-width: 94%;
+}
